@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fixed headers - fullPage.js</title>
+<meta name="author" content="Alvaro Trigo Lopez" />
+<meta name="description" content="fullPage fixed header and footer." />
+<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+<meta name="Resource-type" content="Document" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div class="headerInner clearfix">
+      <div class="logo"><a href="#"><i class="fa fa-globe"></i><span>KRUMA</span></a></div>
+      <div class="headerLinks">
+        <ul class="clearfix">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Become a partner</a></li>
+          <li><a href="#">Get it first</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="footerInner clearfix">
+      <p class="copyright">Kruma Financial INC. Copyright 2017</p>
+      <div class="footerLinks">
+        <ul class="clearfix">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#"><img src="image/chat01.png" alt="chat"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="emailPopup">
+    <div class="popupHeader">
+      <h1 class="h1Basic addPadding01">Get it First!</h1>
+      <span class="close"><i class="fa fa-close"></i></span>
+    </div>
+    <div class="emailVerifai">
+      <p>Enter your email address to be the first to tey the Kurma App</p>
+      <input type="email" name="email" placeholder="Email Address">
+    </div>
+    <div class="signMe">
+      <a href="#">Sign me up!</a>
+    </div>
+  </div>
+  <div id="fullpage">
+    <div class="section">
+      <div class="intro clearfix">
+        <div class="introLeft">
+          <h1 class="h1Basic">FREE MONEY<br>EXCHANGE</h1>
+          <p class="exchangeDtail">Exchange travel money at the best<br>exchange rates anywhere in the world</p>
+          <div class="logInfirst">
+            <input type="email" name="mail" placeholder="Enter your email access"><a class="emailClick" href="#">Get it first</a>
+          </div>
+        </div>
+        <div class="introRight">
+          <p><img src="image/img_mobile.png" alt="image"></p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="intro clearfix">
+        <div class="introLeft">
+          <h1 class="h1Basic">SPAND AND<br>EITHDRAW MONEY<br>WORLDWIDE</h1>
+          <p class="exchangeDtail addCss01">Feature set description 1 - Text Text<br>ext Text</p>
+          <p class="exchangeDtail addCss01">Feature set description 1 - Text Text<br>Text Text</p>
+          <p class="exchangeDtail addCss01">Feature set description 1 - Text Text<br>Text Text</p>
+        </div>
+        <div class="introRight">
+          <p class="shiftImage"><img src="image/img_card.png" alt="image"></p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="intro clearfix">
+        <div class="introRight">
+          <p class="shiftImage01"><img src="image/img_user.png" alt="image"></p>
+        </div>
+        <div class="introLeft">
+          <h1 class="h1Basic">SPAND AND<br>EITHDRAW MONEY<br>WORLDWIDE</h1>
+          <p class="exchangeDtail addCss01">Feature set description 1 - Text Text<br>ext Text</p>
+          <p class="exchangeDtail addCss01">Feature set description 1 - Text Text<br>Text Text</p>
+          <p class="exchangeDtail addCss01">Feature set description 1 - Text Text<br>Text Text</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".emailClick").click(function()
+	{
+		$(".emailPopup").show(400);
+	});
+	$(".close").click(function()
+	{
+		$(".emailPopup").hide(400);
+	});
+});
+</script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+</html>
